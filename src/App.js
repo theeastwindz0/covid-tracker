@@ -1,7 +1,12 @@
+import Footer from "./Components/BasicComp/Footer";
+import Header from "./Components/BasicComp/Header";
 
 function App() {
   return (
-    <div>Covid Tracker</div>
+    <>
+    <Header/>
+    <Footer/>
+    </>
       );
 }
 
