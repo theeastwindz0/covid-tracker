@@ -14,4 +14,46 @@
     width: 50px;
 }
 
+.overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+    position: fixed;
+    top: 0;
+
+    right: -100%;
+    transition: .5s;
+
+    background-color: black;
+    opacity: 0.9;
+}
+.submenu{
+    display: flex;
+    flex-direction: column;
+}
+
+.crossIcon{
+    color: white;
+    font-size: 30px;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.crossIcon:hover{
+    color: orange;
+}
+
+@media (max-width:750px)
+{
+    .header_middle h1{
+        font-size: 24px;
+    }
+}

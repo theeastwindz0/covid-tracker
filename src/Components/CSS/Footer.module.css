@@ -6,3 +6,10 @@
     background-color: black;
     color: white;
 }
+
+@media (max-width:750px)
+{
+    .Footer h4{
+        font-size: 14px;
+    }
+}

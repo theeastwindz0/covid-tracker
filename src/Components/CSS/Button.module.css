@@ -8,9 +8,18 @@
     font-weight: bold;
 
     margin: 0PX 10px;
+    text-align: center;
+
+    border-radius: 5px;
 }
 
 .Button:hover{
     background-color: orange;
 }
 
+@media (max-width:750px)
+{
+    .Button{
+        margin: 10px;
+    }
+}

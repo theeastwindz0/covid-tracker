@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 import styles from '../CSS/Navigation.module.css'
 
-const Navigation = () => {
+const Navigation = (props) => {
 
     return (
         <>
@@ -13,7 +13,7 @@ const Navigation = () => {
         <Button href='#'>ABOUT</Button>
         </span>
         <span className={styles.smallScreen}>
-        <FontAwesomeIcon className={styles.menuIcon} icon={faBars}></FontAwesomeIcon>
+        <FontAwesomeIcon onClick={props.onOpen} className={styles.menuIcon} icon={faBars}></FontAwesomeIcon>
         </span>
 
         </>
